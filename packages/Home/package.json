@@ -1,0 +1,30 @@
+{
+  "name": "@green/home",
+  "version": "1.0.0",
+  "description": "Home screen",
+  "author": "Cat Binh Le",
+  "homepage": "https://github.com/catbinhle/GreenReactNative#readme",
+  "license": "ISC",
+  "main": "lib/Home.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catbinhle/GreenReactNative.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/catbinhle/GreenReactNative/issues"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.68.2"
+  }
+}
