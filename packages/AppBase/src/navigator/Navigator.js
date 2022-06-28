@@ -11,11 +11,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 // import Login from "../modules/Login/Login"
 // import Setting from "../modules/Setting/Setting"
 // import { useSelector } from 'react-redux'
-import Home from '@green/home'
+// import Home from 'home'
+import { SettingScreen } from "../features/Setting/Setting"
+import { AnimationScreen } from "../features/Animations/Animation"
+import { MoveAnimationScreen } from "../features/MoveAnimations/MoveAnimation"
 
 const HomeStack = createNativeStackNavigator()
 // const ToursStack = createNativeStackNavigator()
-// const SettingStack = createNativeStackNavigator()
+const SettingStack = createNativeStackNavigator()
+const AnimationStack = createNativeStackNavigator()
+const MoveAnimationStack = createNativeStackNavigator()
 // const LoginStack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
 
@@ -32,7 +37,7 @@ const HomeStackScreen = () => (
             headerBackTitle: ''
         }}
     >
-        <HomeStack.Screen name="Home" component={Home}/>
+        <HomeStack.Screen name="Home" component={SettingScreen}/>
         {/* <HomeStack.Screen
             name="DetailCity"
             component={DetailCity}
@@ -58,11 +63,23 @@ const HomeStackScreen = () => (
 //     </LoginStack.Navigator>
 // )
 
-// const SettingStackScreen = () => (
-//     <SettingStack.Navigator>
-//         <SettingStack.Screen name="Setting" component={Setting} />
-//     </SettingStack.Navigator>
-// )
+const SettingStackScreen = () => (
+    <SettingStack.Navigator>
+        <SettingStack.Screen name="Setting" component={SettingScreen} />
+    </SettingStack.Navigator>
+)
+
+const AnimationStackScreen = () => (
+    <AnimationStack.Navigator>
+        <AnimationStack.Screen name="Animation" component={AnimationScreen} />
+    </AnimationStack.Navigator>
+)
+
+const MoveAnimationStackScreen = () => (
+    <AnimationStack.Navigator>
+        <AnimationStack.Screen name="MoveAnimation" component={MoveAnimationScreen} />
+    </AnimationStack.Navigator>
+)
 
 const TabsScreen = () => (
     <Tab.Navigator
@@ -90,7 +107,9 @@ const TabsScreen = () => (
         })}
     >
         <Tab.Screen name="Home" component={HomeStackScreen} />
-        <Tab.Screen name="Booking" component={HomeStackScreen} />
+        {/* <Tab.Screen name="Animation" component={AnimationStackScreen} /> */}
+        <Tab.Screen name="Animation" component={MoveAnimationStackScreen} />
+        <Tab.Screen name="Setting" component={SettingStackScreen} />
     </Tab.Navigator>
 )
 

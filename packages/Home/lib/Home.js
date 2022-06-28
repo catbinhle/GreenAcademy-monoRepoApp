@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {View, Text, Image, TouchableOpacity, FlatList} from 'react-native'
+import {View, Text, Image, TouchableOpacity, FlatList, AppRegistry} from 'react-native'
 import styles from "./styles"
 // import { bindActionCreators } from 'redux' 
 // import { connect } from 'react-redux' 

@@ -4,6 +4,7 @@ const Styles = StyleSheet.create({
     container: {
         flex: 1, 
         padding: 11,
+        backgroundColor: 'red'
     },
     item: {
         justifyContent: 'flex-end',

@@ -1,5 +1,5 @@
 {
-  "name": "@green/home",
+  "name": "home",
   "version": "1.0.0",
   "description": "Home screen",
   "author": "Cat Binh Le",
@@ -24,7 +24,11 @@
     "url": "https://github.com/catbinhle/GreenReactNative/issues"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-native": "^0.68.2"
+
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "@types/react-native": "0.66.1"
   }
 }
